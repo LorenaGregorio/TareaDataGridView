@@ -45,6 +45,9 @@ namespace DALUdeO.Reader
                     break;
             }
         }
+
+
+
         protected override string CommandText => DefaultCommad;
 
         protected override CommandType CommandType => CommandType.Text;

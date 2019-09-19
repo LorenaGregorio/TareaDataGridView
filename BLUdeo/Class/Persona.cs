@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BLUdeo.Class
 {
-    public class Persona
+    public class Persona 
     {
         public Collection<PersonaModel> GetPersonaByID()
         {
@@ -25,6 +25,8 @@ namespace BLUdeo.Class
             PersonaReader persona = new PersonaReader(QuerysRepo.TipoQuery.PorId, personaModel);
             Collection<PersonaModel> people = persona.Execute();
             return people;
+
+          
         }
     }
 }

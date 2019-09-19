@@ -25,6 +25,8 @@ namespace DALUdeO
         MySqlConnection Conexion = new MySqlConnection("server=localhost; database=odeodal;Uid=root;");
         DataSet ds;
 
+        persona2 P;
+
         private void Button1_Click(object sender, EventArgs e)
         {
             PersonaModel personaModel = new PersonaModel();
@@ -38,6 +40,7 @@ namespace DALUdeO
 
             foreach (PersonaModel p in people)
                 MessageBox.Show(string.Format("{0}, {1}: {2}", p.Nombre, p.Apellido, p.Direccion));
+
 
         }
 
@@ -62,6 +65,26 @@ namespace DALUdeO
         private void button2_Click(object sender, EventArgs e)
         {
             this.actulizar();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            P = new persona2();
+
+            if (P.Insertar())
+            {
+                if (P.Leer())
+                {
+                    dataGridView2.DataSource = P.Tabla;
+                }
+                
+                 
+            }
+            else
+            {
+                MessageBox.Show("no llego");
+            }
+         
         }
     }
 }

@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Modelos.Persona
+
+namespace Modelos.Persona 
 {
     public class PersonaModel
     {
@@ -13,5 +14,6 @@ namespace Modelos.Persona
         public string Apellido { get; set; }
         public string Direccion { get; set; }
         public DateTime FecNac { get; set; }
+
     }
 }

@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataClass\persona2.cs" />
     <Compile Include="DataClass\QuerysRepo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -77,6 +78,7 @@
     <Compile Include="Reader\ObjectReadaWithConnection.cs" />
     <Compile Include="Reader\ObjectReaderBase.cs" />
     <Compile Include="Reader\PersonaReader.cs" />
+    <Compile Include="Reader\StoreProcedure.cs" />
     <Compile Include="Utils\QueryProcessor.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
